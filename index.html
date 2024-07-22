@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Ensure sections are hidden initially */
+        .section {
+            display: none;
+        }
+
+        /* Display the active section */
+        .section.active {
+            display: block;
+        }
+
+        /* Custom styles for navigation links */
+        .nav-link.active {
+            color: #ff758a;
+            font-weight: bold;
+            border-bottom: 2px solid #ffeb3b;
+        }
+
+        /* Custom styles for the image */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom styles for sections */
+        .section {
+            padding: 2rem;
+            margin: 1rem 0;
+            background: #ffbc75;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom styles for buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #98ff75;
+            color: #75edff;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #7598ff;
+        }
+
+        /* Custom styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #dd75ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #75a5ff;
+        }
+
+        /* Custom styles for the back-to-top button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #91ff75;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #back-to-top:hover {
+            background-color: #red;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-gray-100" background-color:#7591ff>
+    <header class="bg-blue-700 text-white shadow fixed w-full z-10">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold"> Hey there,folks!I'm Ramana, and I'm stoked to introduce you to my website!</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="nav-link hover:text-yellow-500" data-section="home">Home</a></li>
+                    <li><a href="#personal" class="nav-link hover:text-yellow-500" data-section="personal">Personal</a></li>
+                    <li><a href="#skills" class="nav-link hover:text-yellow-500" data-section="skills">Skills</a></li>
+                    <li><a href="#achievements" class="nav-link hover:text-yellow-500" data-section="achievements">Achievements</a></li>
+                    <li><a href="#academics" class="nav-link hover:text-yellow-500" data-section="academics">Academics</a></li>
+                    <li><a href="#experience" class="nav-link hover:text-yellow-500" data-section="experience">Experience</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-yellow-500" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-20 container mx-auto py-10">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h2 class="text-3xl font-bold mb-4">Home</h2>
+<p class="text-lg">Welcome to my website!
+I'm Ramana, your go-to guy for all things web!
+I'm passionate, energetic, and dedicated to making your online presence shine!
+I'm all about creating an unforgettable online experience!
+With my expertise in web design, development, and SEO, you're in good hands!
+Let's work together to make your website a success!
+I'm excited to share my skills and knowledge with you!
+Get ready to take your online presence to the next level!
+Let's do this!
+Let's make some web magic happen!
+.</p>
+        </section>
+
+        <!-- Personal Section -->
+        <section id="personal" class="section">
+            <h2 class="text-3xl font-bold mb-4">Personal</h2>
+            <div class="flex items-center space-x-4">
+                <img src="your-image-url.jpg" alt="Profile Image" class="profile-image">
+                <ul class="list-disc ml-5">
+                    <li><strong>D.O.B:</strong>02/07/2005</li>
+                    <li><strong>Cellphone No:</strong>6385248551</li>
+                    <li><strong>Email:</strong>vsramana02@gmail.com</li>
+                    <li><strong>Address:</strong>5/714 A Eagai Town,
+                                                 Madurai main road,Manikandam,Trichy-620012</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <p class="text-lg"><br>
+1.Programming skills<br>
+2.Problem-solving skills<br>
+3.Data analysis and interpretation<br>
+4.Team work<br>
+5.Web development<br>
+6.Collaboration and communication<br>
+7.Adaptability and continuous learning<br>
+8.Time Management<br>
+9.Leadership <br>
+10.creativity<br></p>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <h2 class="text-3xl font-bold mb-4">Achievements</h2>
+            <p class="text-lg">Won a overall title in BOOTFEST which was conducted in Bishop Heber College.<br>
+                               Secured a second place overall in Holy Cross College.<br>
+                                Won 9th place in District chess Competition<br>
+                                particitpated in AI Worshop conducted in St.Joseph's </p>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="section">
+            <h2 class="text-3xl font-bold mb-4">Academics</h2>
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border-b">S.No</th>
+                        <th class="py-2 px-4 border-b">Institution</th>
+                        <th class="py-2 px-4 border-b">Group</th>
+                        <th class="py-2 px-4 border-b">Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">1</td>
+                        <td class="py-2 px-4 border-b">St.Joseph's College</td>
+                        <td class="py-2 px-4 border-b">Computer Science</td>
+                        <td class="py-2 px-4 border-b">71%</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">2</td>
+                        <td class="py-2 px-4 border-b">Campion Anglo Indian HR.SEC.School</td>
+                        <td class="py-2 px-4 border-b">Biology 12Th</td>
+                        <td class="py-2 px-4 border-b">65%</td>
+                    </tr>
+                     <tr>
+                        <td class="py-2 px-4 border-b">3</td>
+                        <td class="py-2 px-4 border-b">Campion Anglo Indian Hr.SEC.School</td>
+                        <td class="py-2 px-4 border-b">10 Th</td>
+                        <td class="py-2 px-4 border-b">75%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
+            <p class="text-lg">Developed a personal website using HTML, CSS, and JavaScript to showcase skills and projects.<br>
+- Completed a 1-month internship at a software development company to gain hands-on experience.<br>
+- Participated in 5 coding challenges on HackerRank to improve problem-solving skills in Python.<br>
+- Contributed to an open-source project on GitHub to develop collaborative development skills.<br>
+- Completed an online course in data analysis using Python and pandas to enhance data analysis skills.<br>
+- Assisted a friend's website development to gain practical experience in web development.<br>
+- Developed a machine learning model using TensorFlow and Python to predict stock prices.<br>
+- Designed and developed a database management system using MySQL and Python.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-lg font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-medium">Message</label>
+                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+<button id="back-to-top" class="fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600 hidden">⬆</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+            const backToTopBtn = document.getElementById('back-to-top');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetSection = this.getAttribute('data-section');
+
+                    // Remove active class from all sections and links
+                    sections.forEach(section => section.classList.add('hidden'));
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+
+                    // Add active class to the selected section and link
+                    document.getElementById(targetSection).classList.remove('hidden');
+                    document.getElementById(targetSection).classList.add('active');
+                    this.classList.add('active');
+                });
+            });
+
+            // Show the home section by default
+            document.getElementById('home').classList.remove('hidden');
+            document.querySelector('.nav-link[data-section="home"]').classList.add('active');
+
+            // Back to Top button functionality
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove('hidden');
+                } else {
+                    backToTopBtn.classList.add('hidden');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Contact form submission handling
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let message = document.getElementById('message').value;
+
+                if (name && email && message) {
+                    alert('Message sent successfully!');
+                    this.reset();
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
